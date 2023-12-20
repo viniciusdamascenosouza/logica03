@@ -5,6 +5,10 @@ function adicionar() {
   let quantidade = document.getElementById("quantidade").value;
   let subtotal = valorUni * quantidade;
 
-  alert(nome);
-  alert(subtotal);
+  let carrinho = document.getElementById("lista-produtos");
+  carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos" id="lista-produtos">
+                            <section class="carrinho__produtos__produto">
+                                <span class="texto-azul">${quantidade}x</span> ${nome}<span class="texto-azul"> R$${valorUni}</span>
+                            </section>
+                        </section>`;
 }
