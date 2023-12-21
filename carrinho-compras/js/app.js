@@ -21,7 +21,7 @@ function adicionar() {
 
   document.getElementById("quantidade").value = "";
   totalGeral = totalGeral + preco;
-  campoTotal.textContent = `R$ ${totalGeral}`;
+  campoTotal.textContent = `R$${totalGeral}`;
 }
 
 function limpar() {
@@ -30,3 +30,4 @@ function limpar() {
   let campoTotal = document.querySelector("#valor-total");
   campoTotal.innerHTML = "";
 }
+
