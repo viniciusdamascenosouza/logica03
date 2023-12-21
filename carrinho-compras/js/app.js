@@ -22,5 +22,11 @@ function adicionar() {
   document.getElementById("quantidade").value = "";
   totalGeral = totalGeral + preco;
   campoTotal.textContent = `R$ ${totalGeral}`;
-  
+}
+
+function limpar() {
+  let totalGeral = 0;
+  document.getElementById("lista-produtos").innerHTML = "";
+  let campoTotal = document.querySelector("#valor-total");
+  campoTotal.innerHTML = "";
 }
